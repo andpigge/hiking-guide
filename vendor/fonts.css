@@ -1,0 +1,39 @@
+@font-face {
+  src:
+    url(../fonts/SourceSerifPro-SemiBold.ttf) format('truetype'),
+    url(../fonts/Poppins-SemiBold.woff) format('woff');
+    font-family: 'Source-serif-pro';
+    font-weight: 600;
+}
+
+@font-face {
+  src:
+    url(../fonts/Poppins-Medium.ttf) format('truetype'),
+    url(../fonts/Poppins-Medium.woff) format('woff');
+  font-family: 'Poppins';
+  font-weight: 500;
+}
+
+@font-face {
+  src:
+    url(../fonts/Poppins-SemiBold.ttf) format('truetype'),
+    url(../fonts/Poppins-SemiBold.woff) format('woff');
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+@font-face {
+  src:
+    url(../fonts/Poppins-Bold.ttf) format('truetype'),
+    url(../fonts/Poppins-Bold.woff) format('woff');
+  font-family: 'Poppins';
+  font-weight: 700;
+}
+
+@font-face {
+  src:
+    url(../fonts/Poppins-ExtraBold.ttf) format('truetype'),
+    url(../fonts/Poppins-ExtraBold.woff) format('woff');
+  font-family: 'Poppins';
+  font-weight: 800;
+}
