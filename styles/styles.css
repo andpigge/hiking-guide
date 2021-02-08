@@ -1,1 +1,471 @@
+.page {
+  position: relative;
+  background-color: #0B1D26;
+}
 
+.page__position-center {
+  margin: 0 auto;
+}
+
+.page__margin-bottom-main {
+  margin-bottom: 200px;
+}
+
+.page__margin-bottom-footer {
+  margin-bottom: 120px;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  max-width: 1920px;
+  min-width: 320px;
+  padding: 0 80px;
+  padding-top: 70px;
+  z-index: 1;
+}
+
+.header__link {
+  text-decoration: none;
+}
+
+.logo {
+  object-fit: contain;
+  width: 108px;
+  height: 24px;
+}
+
+.header__menu {
+  padding: 0;
+  margin: 0;
+}
+
+.header__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu-item {
+  margin-right: 40px;
+}
+
+.header__menu-item:last-of-type {
+  margin-right: 0;
+}
+
+.header__menu-link {
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-weight: 700;
+  color: white;
+  font-size: 18px;
+  line-height: 22px;
+  transition: color .2s linear, border .3s linear;
+  border-bottom: 2px solid transparent;
+}
+
+.header__menu-link:hover {
+  color: rgba(255, 255, 255, .8);
+  border-bottom: 2px solid white;
+}
+
+.header__auth {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: transform .1s ease;
+}
+
+.header__auth:hover {
+  transform: scale(1.1);
+}
+
+.header__auth-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.header__auth-text {
+  margin: 0;
+  font-family: 'Poppins';
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 21px;
+  color: white;
+}
+
+.content {
+
+}
+
+.content__position-horizontal-center {
+  margin: 0 auto;
+}
+
+.page-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 99.2%;
+  background-image: url(../images/header-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.follow-us {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 23%;
+  left: 0;
+  transform: rotate(90deg);
+  z-index: 1;
+}
+
+.follow-us__text {
+  margin: 0;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+  margin-right: 24px;
+}
+
+@keyframes icons {
+  0% {
+    top: 0;
+  }
+  40% {
+    top: 2px;
+    transform: rotate(270deg);
+  }
+  80% {
+    top: 0;
+    transform: rotate(-450deg);
+  }
+  100% {
+    transform: scale(1.3) rotate(-450deg);
+  }
+}
+
+.follow-us__link {
+  position: relative;
+  text-decoration: none;
+  transform: rotate(-90deg);
+  margin-right: 24px;
+}
+
+.follow-us__link:hover {
+  animation: icons 1.2s ease 1 forwards;
+}
+
+.follow-us__link:last-of-type {
+  margin-right: 0;
+}
+
+.follow-us__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.slider {
+  position: absolute;
+  top: 17.6%;
+  right: 4%;
+  display: flex;
+  align-items: center;
+  max-width: 240px;
+  z-index: 1;
+}
+
+.slider__navigation {
+
+}
+
+.slider__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+}
+
+.slider__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.slider__item {
+  margin-bottom: 40px;
+  transition: transform .1s ease;
+}
+
+.slider__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.slider__item:hover {
+  transform: scale(1.1);
+}
+
+.slider__link {
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+}
+
+.slider__liner {
+  width: 3px;
+  height: 240px;
+  background-color: rgba(255, 255, 255, .5);
+  margin-left: 32px;
+}
+
+.slider__scrolling {
+  width: 3px;
+  height: 60px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.hiking {
+  position: relative;
+  max-width: 1462px;
+  min-width: 320px;
+  margin-top: 1350px;
+}
+
+.hiking__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hiking__item {
+  margin-bottom: 200px;
+}
+
+.hiking__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.hiking-card {
+  /* display: grid;
+  grid-template-columns: minmax(500px, 782px) minmax(400px, 560px);
+  grid-template-columns: 1fr 1fr; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.hiking-card__instruction {
+  position: relative;
+  display: grid;
+  row-gap: 27px;
+  grid-template-rows: repeat(4, minmax(min-content, max-content));
+  grid-auto-rows: minmax(min-content, max-content);
+  align-content: center;
+  margin-left: 150px;
+  max-width: 632px;
+}
+
+.hiking__item:nth-of-type(even) .hiking-card__instruction {
+  order: 1;
+}
+
+.hiking-card__number {
+  margin: 0;
+  position: absolute;
+  top: 38px;
+  left: -120px;
+  font-family: 'Poppins';
+  font-size: 240px;
+  font-weight: 700;
+  line-height: 240px;
+  color: rgba(255, 255, 255, .1);
+}
+
+.hiking-card__title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-family: 'Poppins';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #FBD784;
+}
+
+.hiking-card__line {
+  display: block;
+  min-width: 72px;
+  min-height: 2px;
+  background-color: #FBD784;
+  margin-right: 24px;
+}
+
+.hiking-card__caption {
+  margin: 0;
+  font-family: 'Source-serif-pro';
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+  color: white;
+}
+
+.hiking-card__subtitle {
+  margin: 0;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  color: white;
+}
+
+.hiking-card__text {
+  margin: 0;
+}
+
+.hiking-card__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #FBD784;
+  transition: opacity .3s ease;
+}
+
+.hiking-card__link:hover .hiking-card__arrow {
+  margin-left: 22px;
+  transform: scale(1.1);
+}
+
+.hiking-card__arrow {
+  position: relative;
+  display: block;
+  min-width: 24px;
+  min-height: 16px;
+  background-image: url(../images/icons/hiking-card-icon.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 16px;
+  transition: margin .2s linear, transform .2s ease;
+}
+
+.hiking-card__img {
+  max-height: 720px;
+  max-width: 566px;
+  object-fit: cover;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1462px;
+  min-height: 280px;
+  flex-wrap: wrap;
+}
+
+.footer__wrapper {
+  max-width: 350px;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__link {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+
+.footer__text {
+  margin: 0;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: white;
+}
+
+.footer__copyright {
+  display: flex;
+  margin: 0;
+  margin-top: auto;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, .5);
+  margin-top: auto;
+}
+
+.footer__menu {
+  margin-right: 212px;
+}
+
+.footer__menu:last-of-type {
+  margin-right: 0;
+}
+
+.header__menu-title {
+  margin: 0;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FBD784;
+  margin-bottom: 24px;
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__menu-item {
+  margin-bottom: 16px;
+}
+
+.footer__menu-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer__menu-link {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid transparent;
+  transition: opacity .3s ease, border .2s linear;
+}
+
+.footer__menu-link:hover {
+  opacity: .8;
+  border-bottom: 2px solid white;
+}
