@@ -11,11 +11,36 @@
   margin-bottom: 200px;
 }
 
+@media screen and (max-width: 1280px) {
+  .page__margin-bottom-main {
+    margin-bottom: 180px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .page__margin-bottom-main {
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .page__margin-bottom-main {
+    margin-bottom: 90px;
+  }
+}
+
 .page__margin-bottom-footer {
   margin-bottom: 120px;
 }
 
+@media screen and (max-width: 1280px) {
+  .page__margin-bottom-footer {
+    margin-bottom: 80px;
+  }
+}
+
 .header {
+  box-sizing: border-box;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -26,6 +51,20 @@
   padding: 0 80px;
   padding-top: 70px;
   z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 20px 20px 0;
+  }
 }
 
 .header__link {
@@ -50,12 +89,29 @@
   padding: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .header__list {
+    flex-direction: column;
+  }
+}
+
 .header__menu-item {
   margin-right: 40px;
 }
 
 .header__menu-item:last-of-type {
   margin-right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__menu-item {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .header__menu-item:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .header__menu-link {
@@ -79,10 +135,20 @@
   display: flex;
   align-items: center;
   transition: transform .1s ease;
+  max-width: 120px;
 }
 
 .header__auth:hover {
   transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 1024px) {
+  .header__auth {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-left: auto;
+  }
 }
 
 .header__auth-icon {
@@ -130,6 +196,22 @@
   z-index: 1;
 }
 
+@media screen and (max-width: 1024px) {
+  .follow-us {
+    top: 60%;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .follow-us {
+    flex-direction: column;
+    transform: rotate(0);
+    top: 80%;
+    left: 7%;
+    align-items: flex-start;
+  }
+}
+
 .follow-us__text {
   margin: 0;
   font-family: 'Poppins';
@@ -138,6 +220,13 @@
   line-height: 22px;
   color: white;
   margin-right: 24px;
+}
+
+@media screen and (max-width: 786px) {
+  .follow-us__text {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 @keyframes icons {
@@ -160,7 +249,6 @@
 .follow-us__link {
   position: relative;
   text-decoration: none;
-  transform: rotate(-90deg);
   margin-right: 24px;
 }
 
@@ -168,8 +256,30 @@
   animation: icons 1.2s ease 1 forwards;
 }
 
+.follow-us__link:active {
+  animation: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .follow-us__link:hover {
+    animation: none;
+    transform: scale(1.3);
+  }
+}
+
 .follow-us__link:last-of-type {
   margin-right: 0;
+}
+
+@media screen and (max-width: 786px) {
+  .follow-us__link {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .follow-us__link:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .follow-us__icon {
@@ -185,6 +295,12 @@
   align-items: center;
   max-width: 240px;
   z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .slider {
+    top: 33%;
+  }
 }
 
 .slider__navigation {
@@ -247,10 +363,18 @@
 }
 
 .hiking {
+  box-sizing: border-box;
   position: relative;
-  max-width: 1462px;
+  max-width: 1622px;
   min-width: 320px;
-  margin-top: 1350px;
+  margin-top: 70%;
+  padding: 0 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .hiking {
+    padding: 0 20px;
+  }
 }
 
 .hiking__list {
@@ -263,16 +387,33 @@
   margin-bottom: 200px;
 }
 
+@media screen and (max-width: 1024px) {
+  .hiking__item {
+    margin-bottom: 140px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hiking__item {
+    margin-bottom: 80px;
+  }
+}
+
 .hiking__item:last-of-type {
   margin-bottom: 0;
 }
 
 .hiking-card {
-  /* display: grid;
-  grid-template-columns: minmax(500px, 782px) minmax(400px, 560px);
-  grid-template-columns: 1fr 1fr; */
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+  .hiking-card {
+    justify-content: stretch;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .hiking-card__instruction {
@@ -288,6 +429,55 @@
 
 .hiking__item:nth-of-type(even) .hiking-card__instruction {
   order: 1;
+  margin-left: 228px;
+}
+
+.hiking__item:nth-of-type(odd) .hiking-card__instruction {
+  margin-right: 114px;
+  margin-left: 114px;
+}
+
+@media screen and (max-width: 1024px) {
+  .hiking-card__instruction {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hiking-card__instruction {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .hiking__item:nth-of-type(even) .hiking-card__instruction {
+    margin-left: 186px;
+  }
+
+  .hiking__item:nth-of-type(odd) .hiking-card__instruction {
+    margin-right: 72px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hiking__item:nth-of-type(even) .hiking-card__instruction {
+    order: 0;
+    margin-left: 114px;
+  }
+
+  .hiking__item:nth-of-type(odd) .hiking-card__instruction {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hiking__item:nth-of-type(even) .hiking-card__instruction {
+    margin-left: 0;
+  }
+
+  .hiking__item:nth-of-type(odd) .hiking-card__instruction {
+    margin-left: 0;
+  }
 }
 
 .hiking-card__number {
@@ -300,6 +490,14 @@
   font-weight: 700;
   line-height: 240px;
   color: rgba(255, 255, 255, .1);
+}
+
+@media screen and (max-width: 768px) {
+  .hiking-card__number {
+    font-size: 200px;
+    top: 0;
+    left: 0;
+  }
 }
 
 .hiking-card__title {
@@ -330,6 +528,13 @@
   font-size: 64px;
   line-height: 77px;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .hiking-card__caption {
+    font-size: 48px;
+    line-height: 52px;
+  }
 }
 
 .hiking-card__subtitle {
@@ -378,16 +583,59 @@
 .hiking-card__img {
   max-height: 720px;
   max-width: 566px;
+  min-width: 466px;
   object-fit: cover;
 }
 
+@media screen and (max-width: 1280px) {
+  .hiking-card__img {
+    max-height: 500px;
+    max-width: 466px;
+    min-width: 366px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hiking-card__img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hiking-card__img {
+    min-width: 320px;
+  }
+}
+
 .footer {
+  box-sizing: border-box;
   position: relative;
   display: flex;
   justify-content: flex-end;
-  max-width: 1462px;
+  max-width: 1622px;
+  padding: 0 80px;
   min-height: 280px;
-  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1280px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: stretch;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 0 20px;
+  }
 }
 
 .footer__wrapper {
@@ -395,6 +643,13 @@
   margin-right: auto;
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__wrapper {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
 }
 
 .footer__link {
@@ -425,13 +680,27 @@
 
 .footer__menu {
   margin-right: 212px;
+  width: 250px;
 }
 
 .footer__menu:last-of-type {
   margin-right: 0;
 }
 
-.header__menu-title {
+@media screen and (max-width: 1280px) {
+  .footer__menu {
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .footer__menu:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.footer__menu-title {
   margin: 0;
   font-family: 'Poppins';
   font-weight: 700;
