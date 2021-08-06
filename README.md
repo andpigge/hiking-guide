@@ -29,4 +29,5 @@
 * директива @media для построения отзывчевой верстки
 
 Ссылка на проект: [Hiking-guide](https://andpigge.github.io/hiking-guide)
+
 Ссылка на макет: [Figma](https://www.figma.com/file/tatmplZlUm9tRWZ94DBoNH/MNTN---Landing-Page-(Community)?node-id=0%3A1)
